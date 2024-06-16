@@ -11,9 +11,9 @@ dropdb:
 	docker exec -it postgres15 dropdb go-chat
 
 migrateup:
-	migrate -path db/migrations -database "postgresql://root:password@localhost:5433/go-chat?sslmode=disable" -verbose up
+	migrate -path db/migrations -database "postgresql://postgres://chatgo_user:VT3PlSTZ8QT3BIpS1WOkFPoH2yamiND6@dpg-cpnh0nuehbks7387kfo0-a/chatgo?sslmode=disable" -verbose up
 
 migratedown:
-	migrate -path db/migrations -database "postgresql://root:password@localhost:5433/go-chat?sslmode=disable" -verbose down
+	migrate -path db/migrations -database "postgresql://chatgo_user:VT3PlSTZ8QT3BIpS1WOkFPoH2yamiND6@dpg-cpnh0nuehbks7387kfo0-a/chatgo?sslmode=disable" -verbose down
 
 .PHONY: postgresinit postgres createdb dropdb migrateup migratedown

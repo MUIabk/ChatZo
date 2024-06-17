@@ -15,15 +15,12 @@ func InitRouter(userHandler *user.Handler, wsHandler *ws.Handler) {
 	r = gin.Default()
 
 	r.Use(cors.New(cors.Config{
-		AllowOrigins:     []string{"http://localhost:3000"},
+		AllowOrigins:     []string{"https://your-frontend-url.onrender.com"},
 		AllowMethods:     []string{"GET", "POST"},
 		AllowHeaders:     []string{"Content-Type"},
 		ExposeHeaders:    []string{"Content-Length"},
 		AllowCredentials: true,
-		AllowOriginFunc: func(origin string) bool {
-			return origin == "http://localhost:3000"
-		},
-		MaxAge: 12 * time.Hour,
+		MaxAge:           12 * time.Hour,
 	}))
 
 	r.POST("/signup", userHandler.CreateUser)
@@ -36,6 +33,6 @@ func InitRouter(userHandler *user.Handler, wsHandler *ws.Handler) {
 	r.GET("/ws/getClients/:roomId", wsHandler.GetClients)
 }
 
-func Start(addr string) error {
-	return r.Run(addr)
+func Start() error {
+	return r.Run()
 }

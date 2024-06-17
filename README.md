@@ -28,10 +28,12 @@ ChatZo is ideal for applications requiring real-time messaging capabilities with
 ```
 2. **In root server directory you should run your go project**
 ```bash
+  cd server
   go run cmd/main.go
 ```
 3. **In root client directory you should run your next project**
 ```bash
+  cd client
   npm i
   npm run dev
 ```

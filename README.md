@@ -1,6 +1,6 @@
 ## Description
 
-ChatZo is an advanced chat application designed for secure and efficient instant communication. It leverages JWT Authentication and WebSocket technology to provide seamless real-time messaging capabilities. Built with modern technologies, ChatZo ensures a smooth user experience with robust security features.
+ChatZo is an sophisticated chat application designed for secure and efficient instant communication. It leverages JWT Authentication and WebSocket technology to provide seamless real-time messaging capabilities. Built with modern technologies, ChatZo ensures a smooth user experience with robust security features.
 
 ## Key Features
 

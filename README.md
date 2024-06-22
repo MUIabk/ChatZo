@@ -54,5 +54,9 @@ ChatZo is ideal for applications requiring real-time messaging capabilities with
    GET    /ws/getClients/:roomId    --> get all users in given room
 ```
 
-#### Sign Up Page 
+#### Signup Page 
 ![signup](https://github.com/MUIabk/Competitive-Programming/assets/128874715/da16fa97-fb37-4c68-95aa-73a273dd0869)
+
+
+#### Login Page 
+![login](https://github.com/MUIabk/ChatZo/assets/128874715/23ac30ae-d874-4b9c-99ed-54045acf2537)
